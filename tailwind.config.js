@@ -11,6 +11,7 @@ export default {
     extend: {
       fontFamily: {
         condensed: ["Robot_Condensed", "sans-serif"],
+        eurostile: ["eurostile", "sans-serif"],
       },
     },
   },
