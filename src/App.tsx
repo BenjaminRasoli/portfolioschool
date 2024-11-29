@@ -1,9 +1,10 @@
+import Navbar from "./components/Navbar";
 import "./index.css";
 
 function App() {
   return (
     <>
-      <h1 className="text-blue-500">hello</h1>
+      <Navbar />
     </>
   );
 }
