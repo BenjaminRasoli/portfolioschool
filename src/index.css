@@ -9,6 +9,12 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Robot_Condensed", "sans-serif";
   background-color: #f0f0f0;
+}
+@font-face {
+  font-family: "Robot_Condensed";
+  src: local("Robot_Condensed-Regular"),
+    url("./assets/fonts/RobotoCondensed-VariableFont_wght.ttf")
+      format("truetype");
 }
