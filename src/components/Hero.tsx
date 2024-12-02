@@ -1,16 +1,12 @@
 import placeHolder from "../assets/images/PlaceHolder.jpg";
-import ComputerPhone from "../assets/images/ComputerPhoneImage.png";
-import heroDevices from "../assets/images/hero-devices.svg";
-import a from "../assets/images/membership-website-infographic.png";
+import ComputerPhone from "../assets/images/membership-website-infographic.png";
 
 function Hero() {
   return (
-    <section className="flex flex-col justify-center items-center min-h-screen w-full">
+    <section className="flex flex-col justify-center items-center w-full">
       <div className="text-center space-y-6 p-10">
-        <h1 className="text-5xl font-semibold text-white font-eurostile">
-          Lorem, Ipsum Dolor Sit Amet
-        </h1>
-        <p className="text-lg">
+        <h1 className="text-h1 font-eurostile">Lorem, Ipsum Dolor Sit Amet</h1>
+        <p className="text-p">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         </p>
         <div className="flex flex-col justify-center items-center space-y-4">
@@ -28,11 +24,13 @@ function Hero() {
         </div>
       </div>
 
-      <div className="mt-24 flex justify-center w-full">
-        <img src={a} alt="computer phone image" className="w-2/4 h-auto" />
+      <div className="mt-24 flex justify-center w-full px-10">
+        <img
+          src={ComputerPhone}
+          alt="computer phone image"
+          className="w-auto h-auto"
+        />
       </div>
-
-      <div className="w-full h-32 bg-Main p-0"></div>
     </section>
   );
 }
