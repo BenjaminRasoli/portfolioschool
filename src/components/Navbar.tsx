@@ -28,7 +28,25 @@ function Navbar() {
       setOpen(false);
     };
     window.addEventListener("resize", handleResize);
-  });
+  }, []);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.documentElement.style.overflowY = "hidden";
+    } else {
+      document.documentElement.style.overflowY = "auto";
+    }
+
+    return () => {
+      document.documentElement.style.overflowY = "auto";
+    };
+  }, [isOpen]);
+
+  if (isOpen) {
+    document.documentElement.style.overflowY = "hidden";
+  } else {
+    document.documentElement.style.overflowY = "auto";
+  }
 
   return (
     <nav
