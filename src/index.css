@@ -18,3 +18,9 @@ body {
     url("./assets/fonts/RobotoCondensed-VariableFont_wght.ttf")
       format("truetype");
 }
+
+@font-face {
+  font-family: "eurostile";
+  src: local("eurostile"),
+    url("./assets/fonts/eurostile.ttf") format("truetype");
+}
