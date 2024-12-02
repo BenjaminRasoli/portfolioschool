@@ -35,6 +35,7 @@ interface Technologies {
   category: string;
   officialWebsite: string;
   releaseDate: string;
+  color: string;
 }
 // @ts-ignore
 import { html5, css3, jss, dotnet, react, git } from "react-3d-icons";
@@ -47,6 +48,7 @@ export const technologies: Technologies[] = [
     category: "Frontend",
     officialWebsite: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     releaseDate: "1991-06-01",
+    color: "#ff5733",
   },
   {
     id: "2",
@@ -55,6 +57,7 @@ export const technologies: Technologies[] = [
     category: "Frontend",
     officialWebsite: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     releaseDate: "1996-12-17",
+    color: "#264DE4",
   },
   {
     id: "3",
@@ -63,6 +66,7 @@ export const technologies: Technologies[] = [
     category: "Frontend",
     officialWebsite: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     releaseDate: "1995-12-04",
+    color: "#F0DB4F",
   },
   {
     id: "4",
@@ -71,6 +75,7 @@ export const technologies: Technologies[] = [
     category: "Backend",
     officialWebsite: "https://learn.microsoft.com/en-us/dotnet/csharp/",
     releaseDate: "2000-01-01",
+    color: "#690081",
   },
   {
     id: "5",
@@ -79,6 +84,7 @@ export const technologies: Technologies[] = [
     category: "Frontend",
     officialWebsite: "https://reactjs.org/",
     releaseDate: "2013-03-29",
+    color: "#00d8ff",
   },
   {
     id: "6",
@@ -87,5 +93,6 @@ export const technologies: Technologies[] = [
     category: "Version Control",
     officialWebsite: "https://git-scm.com/",
     releaseDate: "2005-04-07",
+    color: "#f05133",
   },
 ];
