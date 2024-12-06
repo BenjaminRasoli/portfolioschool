@@ -1,7 +1,7 @@
 import { navLinks } from "../constants";
 import Hamburger from "hamburger-react";
 import { useEffect, useState } from "react";
-import cv from "../assets/CV.pdf";
+import cv from "../assets/files/CV.pdf";
 import GithubIcon from "../assets/icons/GithubIcon";
 import LinkedinIcon from "../assets/icons/LinkedinIcon";
 
@@ -29,6 +29,10 @@ function Navbar() {
       setOpen(false);
     };
     window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   useEffect(() => {
