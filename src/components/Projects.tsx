@@ -51,13 +51,13 @@ function Projects() {
                   {project.technologies.join(", ")}
                 </h4>
                 <a
-                  className="sm:text-sm md:text-base border rounded-full mt-5 text-White flex flex-row items-center p-2 px-4"
+                  className="sm:text-sm md:text-base border rounded-full mt-5 text-White flex flex-row items-center p-2 px-4 hover:bg-White hover:text-Main transition-all duration-300"
                   href={project.link}
                   target="_blank"
                 >
                   <span className="mr-2">View Project</span>
 
-                  <ArrowIcon />
+                  <ArrowIcon className="hover:text-Main" />
                 </a>
               </div>
             </div>
