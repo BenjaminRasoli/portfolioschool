@@ -3,7 +3,7 @@ import ComputerPhone from "../assets/images/membership-website-infographic.png";
 
 function Hero() {
   return (
-    <section className="flex flex-col justify-center items-center w-full">
+    <section className="p-container pb-0 flex flex-col justify-center items-center w-full">
       <div className="text-center space-y-6 p-10">
         <h1 className="text-h1 font-eurostile">Lorem, Ipsum Dolor Sit Amet</h1>
         <p className="text-p">
