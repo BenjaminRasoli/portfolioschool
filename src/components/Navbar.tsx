@@ -2,7 +2,8 @@ import { navLinks } from "../constants";
 import Hamburger from "hamburger-react";
 import { useEffect, useState } from "react";
 import cv from "../assets/CV.pdf";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import GithubIcon from "../assets/icons/GithubIcon";
+import LinkedinIcon from "../assets/icons/LinkedinIcon";
 
 function Navbar() {
   const [isOpen, setOpen] = useState<boolean>(false);
@@ -10,7 +11,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 50) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -36,30 +37,19 @@ function Navbar() {
     } else {
       document.documentElement.style.overflowY = "auto";
     }
-
-    return () => {
-      document.documentElement.style.overflowY = "auto";
-    };
   }, [isOpen]);
-
-  if (isOpen) {
-    document.documentElement.style.overflowY = "hidden";
-  } else {
-    document.documentElement.style.overflowY = "auto";
-  }
 
   return (
     <nav
-      className={`flex justify-between w-full items-center p-8 top-0 sticky h-20 ${
-        scrolled ? "bg-Main text-White" : "bg-transparent text-Black"
+      className={`pb-10 border-b z-10 flex justify-between w-full items-center p-8 top-0 sticky h-20 ${
+        scrolled
+          ? "bg-Main border-White  text-White"
+          : "bg-transparent text-Black border-Main"
       } transition-all duration-300`}
-      style={{
-        transition: "background-color 0.3s ease, color 0.3s ease",
-      }}
     >
-      <h3 className={`text-h3 ${scrolled ? "text-White" : "text-Black"}`}>
+      <h4 className={`text-h4 ${scrolled ? "text-White" : "text-Black"}`}>
         Benjamin | Rasoli
-      </h3>
+      </h4>
       <div
         className={`${
           isOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
@@ -86,24 +76,24 @@ function Navbar() {
             <a
               href="https://github.com/BenjaminRasoli"
               target="_blank"
-              className={`${scrolled ? "text-White" : "text-Black"}`}
+              className={`${scrolled ? "text-White" : "text-Black"} `}
             >
-              <FaGithub size={30} />
+              <GithubIcon className=" w-8" />
             </a>
             <a
               href="https://www.linkedin.com/in/benjamin-rasoli-2948ab300"
               target="_blank"
               className={`${scrolled ? "text-White" : "text-Black"}`}
             >
-              <FaLinkedin size={30} />
+              <LinkedinIcon className="w-7" />
             </a>
           </div>
         </ul>
       </div>
-      <div className="hidden lg:flex items-center gap-x-4">
+      <div className="hidden zl:flex items-center gap-x-4">
         {navLinks.map((navLink) => (
           <ul className="list-none" key={navLink.id}>
-            <li className="hover:underline text-h3">
+            <li className="hover:underline text-p">
               <a
                 href={`${navLink.id === "CV" ? cv : "#" + navLink.id}`}
                 download={navLink.id === "CV" && cv}
@@ -121,18 +111,18 @@ function Navbar() {
             target="_blank"
             className={`${scrolled ? "text-White" : "text-Black"}`}
           >
-            <FaGithub size={30} />
+            <GithubIcon className="hover:text-[#808080] w-6" />
           </a>
           <a
             href="https://www.linkedin.com/in/benjamin-rasoli-2948ab300"
             target="_blank"
             className={`${scrolled ? "text-White" : "text-Black"}`}
           >
-            <FaLinkedin size={30} />
+            <LinkedinIcon className="hover:text-[#0A66C2] w-6" />
           </a>
         </div>
       </div>
-      <div className="lg:hidden block z-50">
+      <div className="zl:hidden block z-50">
         <Hamburger
           toggled={isOpen}
           toggle={setOpen}

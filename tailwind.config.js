@@ -9,6 +9,9 @@ export default {
       Dark: "#22223b",
     },
     extend: {
+      screens: {
+        zl: "1100px",
+      },
       fontSize: {
         h1: ["2.5rem", { lineHeight: "3rem", fontWeight: "700" }],
         h2: ["2rem", { lineHeight: "2.5rem", fontWeight: "600" }],
