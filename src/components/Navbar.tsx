@@ -41,7 +41,7 @@ function Navbar() {
 
   return (
     <nav
-      className={`pb-10 border-b z-10 flex justify-between w-full items-center p-8 top-0 sticky h-20 ${
+      className={`p-container py-0 border-b z-10 flex justify-between w-full items-center top-0 sticky h-20 ${
         scrolled
           ? "bg-Main border-White  text-White"
           : "bg-transparent text-Black border-Main"
