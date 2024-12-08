@@ -3,7 +3,7 @@ import ComputerPhone from "../assets/images/membership-website-infographic.png";
 
 function Hero() {
   return (
-    <section className="p-container pb-0 flex flex-col justify-center items-center w-full">
+    <section className="ssm:p-container ssm:pb-0 flex flex-col justify-center items-center w-full">
       <div className="text-center space-y-6 p-10">
         <h1 className="text-h1 font-eurostile">Lorem, Ipsum Dolor Sit Amet</h1>
         <p className="text-p">
@@ -24,7 +24,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className="mt-24 flex justify-center w-full px-10">
+      <div className="mt-24 flex justify-center w-full ssm:px-10 px-5">
         <img
           src={ComputerPhone}
           alt="computer phone image"
