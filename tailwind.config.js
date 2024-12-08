@@ -10,6 +10,8 @@ export default {
     },
     extend: {
       screens: {
+        ssm: "350px",
+        xx: "660px",
         zl: "1100px",
       },
       fontSize: {
