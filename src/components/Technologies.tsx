@@ -10,7 +10,7 @@ function Technologies() {
         <p className="text-p pb-5">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         </p>
-        <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-6 lg:flex-row justify-center gap-12 ">
+        <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-6 lg:flex-row justify-center">
           {technologies.map((technologie) => (
             <div key={technologie.id} className="flex justify-center -z-10">
               <div>
