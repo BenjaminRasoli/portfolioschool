@@ -96,3 +96,60 @@ export const technologies: Technologies[] = [
     color: "#f05133",
   },
 ];
+
+interface Testimonials {
+  id: string;
+  author: string;
+  title: string;
+  content: string;
+  position: string;
+  imgSrc: string;
+}
+
+export const testimonials: Testimonials[] = [
+  {
+    id: "1",
+    author: "Jayme Petracci",
+    title: "This is awesome!",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magni ea odio nobis mollitia blanditiis veritatis expedita commodi adipisci, aliquid omnis. Nemo aut perferendis maiores dignissimos, repellat cupiditate quam possimus?",
+    position: "Software Engineer",
+    imgSrc: "https://randomuser.me/api/portraits/men/46.jpg",
+  },
+  {
+    id: "2",
+    author: "Liuka Kivell",
+    title: "The best tutorial!",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magni ea odio nobis mollitia blanditiis veritatis expedita commodi adipisci, aliquid omnis. Nemo aut perferendis maiores dignissimos, repellat cupiditate quam possimus?",
+    position: "UI/UX Designer",
+    imgSrc: "https://randomuser.me/api/portraits/men/48.jpg",
+  },
+  {
+    id: "3",
+    author: "Chrysler Grinikhinov",
+    title: "Revenue increased by 50%",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magni ea odio nobis mollitia blanditiis veritatis expedita commodi adipisci, aliquid omnis. Nemo aut perferendis maiores dignissimos, repellat cupiditate quam possimus?",
+    position: "Marketing Specialist",
+    imgSrc: "https://randomuser.me/api/portraits/men/49.jpg",
+  },
+  {
+    id: "4",
+    author: "Kessiah Cornbell",
+    title: "Lorem ipsum",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magni ea odio nobis mollitia blanditiis veritatis expedita commodi adipisci, aliquid omnis. Nemo aut perferendis maiores dignissimos, repellat cupiditate quam possimus?",
+    position: "Product Manager",
+    imgSrc: "https://randomuser.me/api/portraits/men/50.jpg",
+  },
+  {
+    id: "5",
+    author: "Wash Pont",
+    title: "The best overall service",
+    content:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, magni ea odio nobis mollitia blanditiis veritatis expedita commodi adipisci, aliquid omnis. Nemo aut perferendis maiores dignissimos, repellat cupiditate quam possimus?",
+    position: "Sales Executive",
+    imgSrc: "https://randomuser.me/api/portraits/men/51.jpg",
+  },
+];
