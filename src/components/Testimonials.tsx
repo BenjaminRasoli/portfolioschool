@@ -8,7 +8,7 @@ import { Navigation, Pagination } from "swiper/modules";
 
 function Testimonials() {
   return (
-    <div className="p-5 pt-[64px] zl:p-container text-center">
+    <div id="testimonials" className="scroll-m-6 p-5 pt-[64px] zl:p-container text-center">
       <h1 className="text-h1">Testimonials</h1>
       <p className=" text-p">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
