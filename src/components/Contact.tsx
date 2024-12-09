@@ -66,7 +66,7 @@ function ContactForm() {
       </div>
 
       <div className="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
-        <form onSubmit={sendEmail} noValidate>
+        <form onSubmit={sendEmail} noValidate autoComplete="on">
           <div className="mb-6">
             <label
               htmlFor="name"
@@ -77,8 +77,10 @@ function ContactForm() {
             <input
               type="text"
               name="name"
+              id="name"
               onChange={handleInput}
               value={formData.name}
+              autoComplete="name"
               placeholder="What's your name?"
               className="w-full p-3 mt-2 rounded-lg focus:outline-none focus:ring-2 "
             />
@@ -94,6 +96,8 @@ function ContactForm() {
             <input
               type="email"
               name="email"
+              id="email"
+              autoComplete="email"
               onChange={handleInput}
               value={formData.email}
               placeholder="What's your email?"
@@ -110,6 +114,7 @@ function ContactForm() {
             </label>
             <textarea
               name="message"
+              id="message"
               onChange={handleInput}
               value={formData.message}
               rows={7}

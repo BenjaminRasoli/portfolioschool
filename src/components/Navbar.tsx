@@ -61,37 +61,39 @@ function Navbar() {
       >
         <ul className="list-none flex flex-col pt-10 items-center h-full text-White space-y-6">
           {navLinks.map((navLink) => (
-            <h3
-              key={navLink.id}
-              className={`text-h3 ${scrolled ? "text-White" : "text-Black"}`}
-            >
-              <a
-                href={`${navLink.id === "CV" ? cv : "#" + navLink.id}`}
-                download={navLink.id === "CV" && cv}
-                className="hover:underline"
-                onClick={() => setOpen(false)}
+            <li key={navLink.id}>
+              <h3
+                className={`text-h3 ${scrolled ? "text-White" : "text-Black"}`}
               >
-                {navLink.title}
-              </a>
-            </h3>
+                <a
+                  href={`${navLink.id === "CV" ? cv : "#" + navLink.id}`}
+                  download={navLink.id === "CV" && cv}
+                  className="hover:underline"
+                  onClick={() => setOpen(false)}
+                >
+                  {navLink.title}
+                </a>
+              </h3>
+            </li>
           ))}
-
-          <div className="flex gap-x-6 text-xl mt-6">
-            <a
-              href="https://github.com/BenjaminRasoli"
-              target="_blank"
-              className={`${scrolled ? "text-White" : "text-Black"} `}
-            >
-              <GithubIcon className=" w-8" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/benjamin-rasoli-2948ab300"
-              target="_blank"
-              className={`${scrolled ? "text-White" : "text-Black"}`}
-            >
-              <LinkedinIcon className="w-7" />
-            </a>
-          </div>
+          <li>
+            <div className="flex gap-x-6 text-xl mt-6">
+              <a
+                href="https://github.com/BenjaminRasoli"
+                target="_blank"
+                className={`${scrolled ? "text-White" : "text-Black"} `}
+              >
+                <GithubIcon className=" w-8" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/benjamin-rasoli-2948ab300"
+                target="_blank"
+                className={`${scrolled ? "text-White" : "text-Black"}`}
+              >
+                <LinkedinIcon className="w-7" />
+              </a>
+            </div>
+          </li>
         </ul>
       </div>
       <div className="hidden zl:flex items-center gap-x-4">
