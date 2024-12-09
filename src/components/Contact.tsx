@@ -57,7 +57,7 @@ function ContactForm() {
   };
 
   return (
-    <div id="contact" className="scroll-m-6 ssm:p-container bg-Main">
+    <div id="contact" className="scroll-m-6 p-3 ssm:p-container bg-Main">
       <div className="text-center">
         <h1 className="text-White text-h1">Contact</h1>
         <p className="text-White text-p pb-8">
