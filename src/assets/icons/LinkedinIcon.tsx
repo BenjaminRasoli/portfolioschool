@@ -7,11 +7,11 @@ function LinkedinIcon({ ...props }) {
       xmlns="http://www.w3.org/2000/svg"
       fill="currentColor"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         <title>linkedin [#161]</title> <desc>Created with Sketch.</desc>
@@ -19,9 +19,9 @@ function LinkedinIcon({ ...props }) {
         <g
           id="Page-1"
           stroke="none"
-          stroke-width="1"
+          strokeWidth="1"
           fill="currentColor"
-          fill-rule="evenodd"
+          fillRule="evenodd"
         >
           <g
             id="Dribbble-Light-Preview"
