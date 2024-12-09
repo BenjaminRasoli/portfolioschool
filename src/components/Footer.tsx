@@ -7,7 +7,7 @@ function Footer() {
         </p>
         <div className="mt-3">
           <a
-            href="www.linkedin.com/in/benjamin-rasoli-2948ab300"
+            href="https://www.linkedin.com/in/benjamin-rasoli-2948ab300/"
             target="_blank"
             className="hover:underline mx-2"
           >
