@@ -8,7 +8,10 @@ import { Navigation, Pagination } from "swiper/modules";
 
 function Testimonials() {
   return (
-    <div id="testimonials" className="scroll-m-6 p-5 pt-[64px] zl:p-container text-center">
+    <div
+      id="testimonials"
+      className="scroll-m-6 p-5 pt-[64px] zl:p-container text-center"
+    >
       <h1 className="text-h1">Testimonials</h1>
       <p className=" text-p">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -22,8 +25,8 @@ function Testimonials() {
         loop
         className="my-10"
       >
-        {testimonials.map((testimonial, index) => (
-          <SwiperSlide key={index}>
+        {testimonials.map((testimonial) => (
+          <SwiperSlide key={testimonial.id}>
             <div className="py-8 px-8 bg-white shadow-lg rounded-lg flex flex-col items-center justify-center min-h-[400px]">
               <div className="flex justify-center md:justify-start -mt-16">
                 <img

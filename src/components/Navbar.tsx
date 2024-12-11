@@ -101,7 +101,7 @@ function Navbar() {
           <ul className="list-none" key={navLink.id}>
             <li className="hover:underline text-p">
               <a
-                href={`${navLink.id === "CV" ? cv : "#" + navLink.id}`}
+                href={`${"#" + navLink.id}`}
                 download={navLink.id === "CV" && cv}
                 className="hover:underline"
               >
