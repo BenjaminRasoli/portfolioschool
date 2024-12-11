@@ -37,10 +37,14 @@ function ContactForm() {
         toast.error("Please enter a message");
       } else {
         await toast.promise(
-          axios.post(import.meta.env.VITE_APP_EMAIL_KEY, { formData }),
+          // axios.post(import.meta.env.VITE_APP_EMAIL_KEY, { formData }),
+          axios.post(
+            "https://back-end-server-node-js-5awn.vercel.app/sendEmail",
+            { formData }
+          ),
           {
             pending: "Sending...",
-            success: "Message sent successfully 👌",
+            success: "Message sent successfully 👌",  
             error: "Failed to send message 🤯",
           }
         );
