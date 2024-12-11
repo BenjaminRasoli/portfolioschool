@@ -16,7 +16,9 @@ function Projects() {
   useEffect(() => {
     const getData = async () => {
       try {
-        const apiUrl = import.meta.env.VITE_APP_API_KEY;
+        // const apiUrl = import.meta.env.VITE_APP_API_KEY;
+        const apiUrl =
+          "https://back-end-server-node-js-5awn.vercel.app/projects";
         const response = await axios.get<Projects[]>(apiUrl);
         setProjects(response.data);
       } catch (error) {
